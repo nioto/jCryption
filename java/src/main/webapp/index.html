@@ -1,0 +1,39 @@
+<html >
+
+<head>
+	<title>Form example</title>
+	<meta charset="UTF-8"> 
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.jcryption.3.1.0.js"></script>
+</head>
+
+<body>
+                    <form class="pure-form l-box" id="form1" action="jcryption2.php" method="POST">
+                        <fieldset>
+                            <legend>Simple login form <strong>without</strong> jCryption</legend>
+
+                            <input id="email-ex1" type="text" placeholder="Email" name="email" value="john@smith.com">
+                            <input id="password-ex1" type="password" placeholder="Password" name="password" value="1234">
+
+                            <label for="role-ex1">Role</label>
+                            <select id="role-ex1" name="role">
+                                <option>Admin</option>
+                                <option>Manager</option>
+                                <option>User</option>
+                            </select>
+
+                            <label for="remember">
+                                <input id="remember-ex1" type="checkbox" name="remember" checked="checked"> Remember me
+                            </label>
+
+                            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                        </fieldset>
+                    </form>
+                    
+<script type="text/javascript">
+$(function() {
+	$("#form1").jCryption();
+});
+</script>
+</body>
+</html>
